@@ -48,23 +48,23 @@ https://airep.herokuapp.com/
 
 ## Screenshots
 Home
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image1.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image1.png)
 
 User
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image6.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image6.png)
 
 User profile
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image7.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image7.png)
 
 Admin insights
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image2.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image2.png)
 
 Reports
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image4.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image4.png)
 
 Data and report visualization
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image3.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image3.png)
 
 User requests for app access
-![App Screenshot](https://github.com/SuhaneeMavar/VMS/blob/main/App%20Screenshots/image5.png)
+![App Screenshot](https://github.com/SuhaneeMavar/VolunteacherManagementSystem/blob/main/AppScreenShot/image5.png)
 
