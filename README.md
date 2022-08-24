@@ -5,7 +5,8 @@ Developed for AIREP( All India Rural Empowerment Program NGO ). Incorporates a u
 interface for operational tasks, provides meaningful insights and generates precise analytical reports
 with visualisation of complex data.
 
-
+### Team Size
+3 memebers
 
 
 ## Demo
