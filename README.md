@@ -10,7 +10,7 @@ with visualisation of complex data.
 
 ## Demo
 
-http://airep.herokuapp.com/
+https://airep.herokuapp.com/
 
 
 ## Tech Stack
