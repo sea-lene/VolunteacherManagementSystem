@@ -30,13 +30,17 @@ https://airep.herokuapp.com/
 
 
 ## Features
- These features are proided according to requirements 
+ These features are provided according to requirements 
 - Detailed report generation
 - Statistical Insights
 - Activity timelines
 - Easier Operational tasks
 
+## Lessons Learned
 
+- Learned how to articulate technical challenges and solutions, and to handle ambiguous or undefined problems.
+- Got experience of requirement engineering, analysis and designing software solutions.
+- Explored new technologies and concepts.
 
 
 
