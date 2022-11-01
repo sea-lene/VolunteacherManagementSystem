@@ -39,9 +39,10 @@ https://airep.herokuapp.com/
 
 ## Lessons Learned
 
-- Learned how to articulate technical challenges and solutions, and to handle ambiguous or undefined problems.
-- Got experience of requirement engineering, analysis and designing software solutions.
-- Explored new technologies and concepts.
+- Leanrned analytical and problem-solving skills by handling ambiguous or undefined
+problems. Improved formal written communication skills.
+- Gained experience of requirement engineering, analysis and strategic designing software solutions.
+- Hands on experience of new technologies and concepts.
 
 
 
