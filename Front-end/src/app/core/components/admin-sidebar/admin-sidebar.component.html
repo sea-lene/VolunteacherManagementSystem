@@ -1,0 +1,134 @@
+<nav class="navbar navbar-vertical navbar-expand-md navbar-light" id="sidenav-main" style="background-color: #0C0032;">
+  <div class="container-fluid">
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" (click)="isCollapsed=!isCollapsed"
+      aria-controls="sidenav-collapse-main">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <!-- Brand -->
+    <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/admin']">
+      <img src="./assets/img/brand/AIREP-logo_.png" height="" class="navbar-brand-img" alt="...">
+    </a>
+    <!-- User -->
+    <ul class="nav align-items-center d-md-none">
+
+      <li class="nav-item" ngbDropdown placement="bottom-right">
+        <a class="nav-link" role="button" ngbDropdownToggle>
+          <div class="media align-items-center">
+            <div class="avatar avatar-sm rounded-circle">
+              <img src="{{user.photo}}" class="img-fluid">
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu-arrow dropdown-menu-right" ngbDropdownMenu>
+          <div class=" dropdown-header noti-title">
+            <h6 class="text-overflow m-0">Welcome!</h6>
+          </div>
+          <a routerLinkActive="active" routerLink="/{{userType}}/profile/posts" class="dropdown-item">
+            <i class="ni ni-single-02"></i>
+            <span>My profile</span>
+          </a>
+          <a routerLinkActive="active" routerLink="/{{userType}}/profile/set-profile" class="dropdown-item">
+            <i class="fas fa-portrait"></i>
+            <span>Set Profile Photo</span>
+          </a>
+          <a routerLinkActive="active" routerLink="/{{userType}}/reset-password" class="dropdown-item">
+            <i class="ni ni-lock-circle-open"></i>
+            <span>Change Password</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a style="cursor: pointer;" class="dropdown-item" (click)=logout()>
+            <i class="ni ni-user-run"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+      <!-- Collapse header -->
+      <div class="navbar-collapse-header d-md-none">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a routerLinkActive="active" [routerLink]="['/dashboard']">
+              <img src="./assets/img/brand/logo.png">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed=!isCollapsed">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <ul class="navbar-nav">
+
+        <li *ngFor="let menuItem of menuItems;let i=index " nav-item>
+
+          <ng-container
+            *ngIf="(menuItem.title=='Kids' || menuItem.title=='Projects' || menuItem.title=='Sessions' || menuItem.title=='Events') ">
+            <ng-container *ngIf="menuItem.title=='Dashboard'">
+              <a  routerLinkActive="active" (click)="showChildren(i);setActive(false)"
+                class="nav-link text-white">
+                <i class="{{menuItem.icon}}"></i>
+                {{menuItem.title}} <div class="text-right "> <span style="float: right;"><i
+                      class="{{menuItem.adjustment}}  text-sm {{menuItem.class}}" style="float: right;"></i></span>
+                </div>
+              </a>
+            </ng-container>
+            <ng-container *ngIf="menuItem.title!='Dashboard'">
+              <a [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="showChildren(i);setActive(false)"
+                class="nav-link text-white">
+                <i class="{{menuItem.icon}}"></i>
+                {{menuItem.title}} <div class="text-right "> <span style="float: right;"><i
+                      class="{{menuItem.adjustment}}  text-sm {{menuItem.class}}" style="float: right;"></i></span>
+                </div>
+              </a>
+            </ng-container>
+          </ng-container>
+
+          <ng-container
+            *ngIf="!(menuItem.title=='Kids' || menuItem.title=='Projects' || menuItem.title=='Sessions' || menuItem.title=='Events') ">
+           
+           
+            <ng-container *ngIf="menuItem.title=='Dashboard'">
+              <a  [ngClass]='{active:isActive}' (click)="showChildren(i);setActive(true)"
+              [routerLink]="[menuItem.path]" class="nav-link text-white">
+              <i class="{{menuItem.icon}}"></i>
+              {{menuItem.title}} <div class="text-right "> <span style="float: right;"><i
+                    class="{{menuItem.adjustment}}  text-sm {{menuItem.class}}" style="float: right;"></i></span></div>
+            </a>
+            </ng-container>
+
+            <ng-container *ngIf="menuItem.title!='Dashboard'">
+              <a [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="showChildren(i);setActive(false)"
+              [routerLink]="[menuItem.path]" class="nav-link text-white">
+              <i class="{{menuItem.icon}}"></i>
+              {{menuItem.title}} <div class="text-right "> <span style="float: right;"><i
+                    class="{{menuItem.adjustment}}  text-sm {{menuItem.class}}" style="float: right;"></i></span></div>
+            </a>
+            </ng-container>
+
+          </ng-container>
+
+
+
+          <ng-container *ngIf="menuItem.showChild">
+            <div class="pl-5 pr-0">
+        <li *ngFor="let m of menuItem.children" nav-item>
+          <a [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" [routerLink]="[m.path]"
+            class="nav-link text-white" (click)='setActive(false)'>
+            {{m.title}}
+          </a>
+        </li>
+    </div>
+          </ng-container>
+
+    </li>
+    </ul>
+  </div>
+  </div>
+</nav>
