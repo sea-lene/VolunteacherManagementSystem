@@ -8,12 +8,6 @@ with visualisation of complex data.
 ### Team Size
 3 memebers
 
-
-## Demo
-
-https://airep.herokuapp.com/
-
-
 ## Tech Stack
 
 **Client:** Angular, Bootstrap
