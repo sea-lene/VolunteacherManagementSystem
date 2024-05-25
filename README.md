@@ -16,14 +16,6 @@ with visualisation of complex data.
 
 **Database:** MySql on AWS, Firebase
 
-## Documentation
-
-[Documentation](https://drive.google.com/file/d/11nT3a1auT9kCfJyeZcjX9XXFhBDWSSJl/view?usp=sharing)
-
-
-
-
-
 ## Features
  These features are provided according to requirements 
 - Detailed report generation
